@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #A5FFBE;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: auto;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #000000;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    padding-top: 5px;
+}
+
+header * {
+    display: inline;
+    float: left;
+}
+
+header li {
+    margin: 30px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 70%;
+    background: #f1f1f1;
+}
+
+form.search button {
+    float: right;
+    width: 15%;
+    padding: 10px;
+    background: #2195f300;
+    color: white;
+    font-size: 17px;
+    border: 1px solid rgba(128, 128, 128, 0);
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+form.login, input[type="text"] {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin: auto;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    width: 300px;
+    text-align: center;
+}
+
+form.login, input[type="submit"] {  
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+}
+

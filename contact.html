@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Site Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles/contact-style.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <form class="search" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </header>
+    </div>
+    <main>
+        <h1>Contact Us</h1>
+        <h4>We are happy to receive any feedback from our users!<br><br>Please enter in your information and feedback and we will get back to you shortly!</h4>
+        <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+            <label for="email">email</label>
+            <input type="text" name="email" id="email" placeholder="example@email.com" required>
+            <label for="Feedback">Feedback</label>
+            <input type="text" name="feedback" id="feedback" placeholder="Enter Feedback" required>
+            <input type="submit" value="Submit">
+            <div class="checkbox-container"></div>
+                <input type="checkbox">
+                <div class="checkbox-text">Would you like to receive updates regarding your feedback?</div>
+            </label>
+        </form>
+    </main>
+</body>
+
+</html>
